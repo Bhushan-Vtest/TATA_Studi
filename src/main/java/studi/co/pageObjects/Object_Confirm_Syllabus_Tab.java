@@ -11,7 +11,7 @@ import studi.co.Base.BaseClass;
 public class Object_Confirm_Syllabus_Tab extends BaseClass {
 
 	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView[1]")
-	public WebElement get_syllabus_Tab_Label;
+		public WebElement get_syllabus_Tab_Label;
 	
 	public Object_Confirm_Syllabus_Tab() {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);

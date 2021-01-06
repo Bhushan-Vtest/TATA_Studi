@@ -7,13 +7,13 @@
   <test thread-count="1" parallel="tests" name="Device 01(failed)">
     <parameter name="type" value="Android"/>
     <classes>
-      <class name="studi.co.testScripts.AFS_UserStory_76">
+      <class name="studi.co.testScripts.AFS_UserStory_65">
         <methods>
-          <include name="TC18_Verify_Answer_Feedback_Is_Correct_In_Practice"/>
+          <include name="T03_To_verify_Practise_Quetions"/>
           <include name="Validate_Login"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- studi.co.testScripts.AFS_UserStory_76 -->
+      </class> <!-- studi.co.testScripts.AFS_UserStory_65 -->
     </classes>
   </test> <!-- Device 01(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -47,7 +47,7 @@ public class Module_Verify_Answer_Options_In_Practice extends BaseClass{
 		
 		obptcm.beginPractice.click();
 		
-		Thread.sleep(10000);
+		applyExplicitWait(10);
 		
 		//verification that questions are displayed
 		

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="23" total="24" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-29T08:23:23Z" name="Suite" finished-at="2020-12-29T08:27:33Z" duration-ms="250135">
+  <suite started-at="2021-01-06T12:56:57Z" name="Suite" finished-at="2021-01-06T13:01:24Z" duration-ms="266273">
     <groups>
     </groups>
-    <test started-at="2020-12-29T08:23:23Z" name="Device 01" finished-at="2020-12-29T08:27:33Z" duration-ms="250135">
-      <class name="studi.co.testScripts.AFS_UserStory_76">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:studi.co.testScripts.AFS_UserStory_76@484094a5]" started-at="2020-12-29T08:23:23Z" name="beforeTest" finished-at="2020-12-29T08:23:39Z" duration-ms="15816" status="PASS">
+    <test started-at="2021-01-06T12:56:57Z" name="Device 01" finished-at="2021-01-06T13:01:24Z" duration-ms="266273">
+      <class name="studi.co.testScripts.AFS_UserStory_65">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:studi.co.testScripts.AFS_UserStory_65@1e461e41]" started-at="2021-01-06T12:56:58Z" name="beforeTest" finished-at="2021-01-06T12:57:25Z" duration-ms="27710" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="Validate_Login()[pri:0, instance:studi.co.testScripts.AFS_UserStory_76@484094a5]" started-at="2020-12-29T08:23:39Z" name="Validate_Login" finished-at="2020-12-29T08:24:04Z" duration-ms="24538" status="PASS">
+        <test-method is-config="true" signature="Validate_Login()[pri:0, instance:studi.co.testScripts.AFS_UserStory_65@1e461e41]" started-at="2021-01-06T12:57:25Z" name="Validate_Login" finished-at="2021-01-06T12:58:35Z" duration-ms="69778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Login -->
-        <test-method signature="TC03_Verify_Answer_Options_In_Revision()[pri:0, instance:studi.co.testScripts.AFS_UserStory_76@484094a5]" started-at="2020-12-29T08:24:04Z" name="TC03_Verify_Answer_Options_In_Revision" finished-at="2020-12-29T08:27:33Z" duration-ms="209459" status="PASS">
+        <test-method signature="T03_To_verify_Practise_Quetions()[pri:0, instance:studi.co.testScripts.AFS_UserStory_65@1e461e41]" started-at="2021-01-06T12:58:35Z" name="T03_To_verify_Practise_Quetions" finished-at="2021-01-06T13:01:24Z" duration-ms="168423" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC03_Verify_Answer_Options_In_Revision -->
-      </class> <!-- studi.co.testScripts.AFS_UserStory_76 -->
+        </test-method> <!-- T03_To_verify_Practise_Quetions -->
+      </class> <!-- studi.co.testScripts.AFS_UserStory_65 -->
     </test> <!-- Device 01 -->
   </suite> <!-- Suite -->
 </testng-results>

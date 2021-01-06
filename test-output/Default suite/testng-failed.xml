@@ -5,8 +5,8 @@
     <classes>
       <class name="studi.co.testScripts.AFS_UserStory_76">
         <methods>
+          <include name="TC23_ToVerify_MCQQuetions_In_Test_In_Default_State"/>
           <include name="Validate_Login"/>
-          <include name="GetAttribute"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- studi.co.testScripts.AFS_UserStory_76 -->

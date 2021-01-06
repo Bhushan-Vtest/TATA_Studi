@@ -10,21 +10,27 @@ public class Module_Create_Study_Plan extends BaseClass {
 	public void Validate_create_study_plan() throws InterruptedException {
 
 		Object_Create_Study_Plan CSP = new Object_Create_Study_Plan();
+		CSP.create_study_plan_button.click();
+		CSP.select_Geography.click();
+		
+		
+		
+		
+		
+		
+		
+//		browse_books_page_title = CSP.browse_books_page_title.getText();
 
-		CSP.browse_books_tab.click();
-		browse_books_page_title = CSP.browse_books_page_title.getText();
+//		if (browse_books_page_title.equals("Browse Books")) {
+			
+//			Thread.sleep(2000);
+			
+//		CSP.plus_button.click();
+			
+			
+//			CSP.create_study_plan_option.click();
 
-		if (browse_books_page_title.equals("Browse Books")) {
-			
-			Thread.sleep(2000);
-			
-			CSP.plus_button.click();
-			
-			Thread.sleep(2000);
-			
-			CSP.create_study_plan_option.click();
-
-			create_study_plan_page_title = CSP.create_study_plan_page_title.getText();
+//			create_study_plan_page_title = CSP.create_study_plan_page_title.getText();
 
 			if(create_study_plan_page_title.equals("Create Study Plan"))
 			{
@@ -53,8 +59,8 @@ public class Module_Create_Study_Plan extends BaseClass {
 			else
 				System.out.println("Create Study Plan page NOT found");
 			
-		} else
-			System.out.println("No Browse Books page found");
+//		} else
+//			System.out.println("No Browse Books page found");
 
 	}
 
