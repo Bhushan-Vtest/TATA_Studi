@@ -9,7 +9,7 @@
     <classes>
       <class name="studi.co.testScripts.AFS_UserStory_65">
         <methods>
-          <include name="T03_To_verify_Practise_Quetions"/>
+          <include name="T07_To_Verify_Warning_Message_On_Clicking_Back_Button"/>
           <include name="Validate_Login"/>
           <include name="beforeTest"/>
         </methods>

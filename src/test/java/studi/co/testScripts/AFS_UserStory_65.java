@@ -1,5 +1,6 @@
 package studi.co.testScripts;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
@@ -22,32 +23,59 @@ public class AFS_UserStory_65 extends BaseClass{
 	}
 	
 	@Test(enabled=false)
-    public void	T01_To_verify_BeginPractise_Link() throws IOException, InterruptedException{
+    public void	T01_To_Verify_BeginPractise_Link() throws IOException, InterruptedException{
 		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
 		test.verify_Begin_Practise_Link();
 		
 	}
 	
 	@Test(enabled= false)
-    public void	T02_To_verify_BeginPractise_Button() throws IOException, InterruptedException{
+    public void	T02_To_Verify_BeginPractise_Button() throws IOException, InterruptedException{
 		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
 		test.verify_beginPractise_Button();
 		
 	}
 
-	@Test(enabled=true)
-    public void	T03_To_verify_Practise_Quetions() throws IOException, InterruptedException{
+	@Test(enabled=false)
+    public void	T03_To_Verify_Practise_Quetions() throws IOException, InterruptedException{
 		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
 		test.verify_Practise_Quetions();
 		
 	}
 	
-	@Test(enabled=true)
-    public void	T04_To_verify_User_Can_Attempt_Practise_Quetions() throws IOException, InterruptedException{
+	@Test(enabled=false)
+    public void	T04_To_Verify_User_Can_Attempt_Practise_Quetions() throws IOException, InterruptedException, AWTException{
 		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
 		test.verify_User_Can_attempt_PractiseQuetions();
 		
 	}
+	
+	@Test(enabled=false)
+    public void	T05_To_Verify_User_should_shown_proper_Response_for_correct_option() throws IOException, InterruptedException, AWTException{
+		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
+		test.toVerify_ProperFeedBack_forCorrectOption();
+		
+	}
+	
+	@Test(enabled=true)
+    public void	T06_To_Verify_User_should_shown_proper_Response_for_incorrect_option() throws IOException, InterruptedException, AWTException{
+		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
+		test.toVerify_ProperFeedBack_forInCorrectOption();
+		
+	}
+	
+	
+	
+	@Test(enabled=true)
+	 public void T07_To_Verify_Warning_Message_On_Clicking_Back_Button() throws IOException, InterruptedException, AWTException{
+			Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
+			test.toVerify_Warning_Message();
+			
+		}
+	
+	
+	
+	
 	
 	
 }

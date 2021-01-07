@@ -92,8 +92,46 @@ public class Object_Subject_Mathematics extends Object_Browse_Books {
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView")
 	public WebElement comparing_Numbers_1;
 	
-	@AndroidFindBy(id="com.tce.studi:id/tv_primary_action")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView[2]")
 	public WebElement begin_Practise_1;
+	
+	@AndroidFindBy(xpath="//android.view.View[@text='2']")
+	public WebElement answer_Text_2;
+	
+	@AndroidFindBy(xpath="//android.view.View[@text='35']")
+	public WebElement answer_Text_35;
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[3]/android.widget.CheckBox")
+	public WebElement green_Smiley_icon;
+	
+	@AndroidFindBy(xpath="//android.view.View[@text='Uh-oh! Give it another shot!']")
+	public WebElement wrong_Answer_message;
+	
+	@AndroidFindBy(xpath="//android.view.View[@text='Great job! Let's continue.']")
+	public WebElement right_Answer_message;
+	
+	@AndroidFindBy(id="com.tce.studi:id/tvPrimaryAction")
+	public WebElement continue_Button;
+	
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView[2]")
+	public WebElement back_Button;
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[1]")
+	public WebElement warning_Message_1;
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]")
+	public WebElement warning_Message_2;
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView[1]")
+	public WebElement yes_Button;
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView[2]")
+	public WebElement no_Button;
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView")
+	public WebElement your_Confidence_Report;
+	
+	
 	
 	public WebElement getAllChapters_Heading() {
 		System.out.println("Performing Operation on allChaptersHeading");

@@ -215,4 +215,12 @@ public class Keyword extends BaseClass {
 		log.info(message);
 
 	}
+	
+	public static void scrollDown() throws AWTException {
+		 Robot robot = new Robot();
+
+	        // Scroll Down using Robot class
+	        robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+	        robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+	}
 }
