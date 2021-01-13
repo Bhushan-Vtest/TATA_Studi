@@ -11,10 +11,11 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import junit.framework.Assert;
 import studi.co.Base.BaseClass;
+import studi.co.Base.Keyword;
 import studi.co.pageObjects.Object_Begin_Practice_Topic4_Chapter1_Mathematics;
 import studi.co.pageObjects.Object_Begin_Revision_Topic4_Chapter1_Mathematics;
 import studi.co.pageObjects.Object_Browse_Books;
-import studi.co.pageObjects.Object_Subject_Mathematics;
+import studi.co.pageObjects.Object_Syllabus_Option;
 
 public class Module_Verify_Answer_Options_In_Practice extends BaseClass{
 	
@@ -25,13 +26,13 @@ public class Module_Verify_Answer_Options_In_Practice extends BaseClass{
 		
 	
 		Object_Browse_Books obb=new Object_Browse_Books();
-		Object_Subject_Mathematics osm=new Object_Subject_Mathematics();
+		Object_Syllabus_Option osm=new Object_Syllabus_Option();
 		Object_Begin_Practice_Topic4_Chapter1_Mathematics obptcm = new Object_Begin_Practice_Topic4_Chapter1_Mathematics(); 
 		obb.syllabus.click();
 		Thread.sleep(2000);
 		
-		osm.subject_Mathematics.click();
-		
+//		osm.subject_Mathematics.click();
+		Keyword.clickOnElementUsingText("Mathematics");
 		Thread.sleep(6000);
 		osm.topic_4_chapter_1.click();
 		
@@ -105,12 +106,13 @@ public class Module_Verify_Answer_Options_In_Practice extends BaseClass{
 			
 		
 			Object_Browse_Books obb=new Object_Browse_Books();
-			Object_Subject_Mathematics osm=new Object_Subject_Mathematics();
+			Object_Syllabus_Option osm=new Object_Syllabus_Option();
 			Object_Begin_Practice_Topic4_Chapter1_Mathematics obpt = new Object_Begin_Practice_Topic4_Chapter1_Mathematics(); 
 			obb.syllabus.click();
 			Thread.sleep(2000);
 			
-			osm.subject_Mathematics.click();
+	//		osm.subject_Mathematics.click();
+			Keyword.clickOnElementUsingText("Mathematics");
 			System.out.println("Subject selected is :Mathematics ");
 			
 			Thread.sleep(6000);

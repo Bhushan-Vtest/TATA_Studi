@@ -10,7 +10,7 @@ import studi.co.Base.BaseClass;
 import studi.co.Base.Keyword;
 import studi.co.pageObjects.Object_Begin_Practice_Topic4_Chapter1_Mathematics;
 import studi.co.pageObjects.Object_Browse_Books;
-import studi.co.pageObjects.Object_Subject_Mathematics;
+import studi.co.pageObjects.Object_Syllabus_Option;
 
 public class Module_Verify_Attempt_In_Practice extends BaseClass{
 	
@@ -19,13 +19,13 @@ public class Module_Verify_Attempt_In_Practice extends BaseClass{
 //		Module_Login ml=new Module_Login(); 
 //		ml.Login_to_app();
 		Object_Browse_Books obb=new Object_Browse_Books();
-		Object_Subject_Mathematics osm=new Object_Subject_Mathematics();
+		Object_Syllabus_Option osm=new Object_Syllabus_Option();
 		Object_Begin_Practice_Topic4_Chapter1_Mathematics obpt = new Object_Begin_Practice_Topic4_Chapter1_Mathematics(); 
 		
 		Keyword.clickOnElement(obb.getSyllabus());
 		Keyword.applyExplicitWait(3);
 		
-		Keyword.clickOnElement(osm.getSubject_Mathematics());
+//		Keyword.clickOnElement(osm.getSubject_Mathematics());
 		
 		Keyword.applyExplicitWait(6);
 		Keyword.clickOnElement(osm.getTopic_4_chapter_1());

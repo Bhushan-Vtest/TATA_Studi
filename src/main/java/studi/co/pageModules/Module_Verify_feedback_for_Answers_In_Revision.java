@@ -24,10 +24,10 @@ public class Module_Verify_feedback_for_Answers_In_Revision extends BaseClass {
 //		login.Login_to_app();
 		
 		Object_Begin_Revision_Topic4_Chapter1_Mathematics obrtcm=new Object_Begin_Revision_Topic4_Chapter1_Mathematics();
-		Keyword.clickOnElement(obrtcm.syllabus);
+		//Keyword.clickOnElement(obrtcm.syllabus);
 		Keyword.applyExplicitWait(3);
 		
-		Keyword.clickOnElement(obrtcm.subject_Mathematics);
+		//Keyword.clickOnElement(obrtcm.subject_Mathematics);
 		System.out.println("Subject:Mathematics is chosen");
 		
 		Keyword.applyExplicitWait(6);

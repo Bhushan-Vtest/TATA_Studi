@@ -15,7 +15,7 @@
         <parameter name="iOSversion" value=""/>-->   
        
         <classes>
-            <class name="studi.co.testScripts.AFS_UserStory_65" />
+            <class name="studi.co.testScripts.AFS_UserStory_2" />
         </classes>
     </test>           
 </suite>

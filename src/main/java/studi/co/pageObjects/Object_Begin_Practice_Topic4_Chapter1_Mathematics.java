@@ -11,7 +11,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class Object_Begin_Practice_Topic4_Chapter1_Mathematics extends Object_Subject_Mathematics {
+public class Object_Begin_Practice_Topic4_Chapter1_Mathematics extends Object_Syllabus_Option {
 	public Object_Begin_Practice_Topic4_Chapter1_Mathematics() {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
 

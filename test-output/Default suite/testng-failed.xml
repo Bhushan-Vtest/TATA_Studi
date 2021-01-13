@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="studi.co.testScripts.AFS_UserStory_76">
+      <class name="studi.co.testScripts.AFS_UserStory_65">
         <methods>
-          <include name="TC23_ToVerify_MCQQuetions_In_Test_In_Default_State"/>
+          <include name="T03_To_Verify_Practise_Quetions"/>
           <include name="Validate_Login"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- studi.co.testScripts.AFS_UserStory_76 -->
+      </class> <!-- studi.co.testScripts.AFS_UserStory_65 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

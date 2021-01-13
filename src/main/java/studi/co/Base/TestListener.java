@@ -76,8 +76,9 @@ public class TestListener extends Keyword implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
-		String timeStamp = new SimpleDateFormat("dd-MM-yyyy_hh_mm_ss").format(new Date());
-		String reportName = "Test-Report- " + timeStamp + ".html";
+	//	String timeStamp = new SimpleDateFormat("dd-MM-yyyy_hh_mm_ss").format(new Date());
+		String timeStamp = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+		String reportName = "Extent-Test-Report- " + timeStamp + ".html";
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/ExtentReport/" + reportName);
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir") + "/extents-config.xml");
 

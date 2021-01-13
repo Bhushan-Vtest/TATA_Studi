@@ -35,6 +35,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
@@ -53,6 +54,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 //Handling Config file operations and Extent report initialization
@@ -72,8 +74,11 @@ public class BaseClass {
 	public static TouchAction action;
 	public static WebDriverWait wait;
 	public static Logger log;
+	public ExtentTest test;
 
 	public BaseClass() {
+		
+		
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -98,7 +103,7 @@ public class BaseClass {
 			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Appium");
 			caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 			// caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
-			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
 			caps.setCapability("appPackage", "com.tce.studi");
 			caps.setCapability("appActivity", "com.tce.view.ui.activities.SplashScreenActivity");
 			caps.setCapability(MobileCapabilityType.TAKES_SCREENSHOT, "true");
@@ -233,6 +238,62 @@ public class BaseClass {
 	 * 
 	 * @param text
 	 */
+	
+//	public void swipeDown(int howManySwipes) {
+//		Dimension size = driver.manage().window().getSize();
+//		// calculate coordinates for vertical swipe
+//		int startVerticalY = (int) (size.height * 0.8);
+//		int endVerticalY = (int) (size.height * 0.21);
+//		int startVerticalX = (int) (size.width / 2.1);
+//				try {
+//					for (int i = 1; i <= howManySwipes; i++) {
+//					new TouchAction<>(driver).press(point(startVerticalX, endVerticalY))
+//							.waitAction(waitOptions(ofSeconds(2))).moveTo(point(startVerticalX, startVerticalY))
+//							.release().perform();
+//				}
+//			} catch (Exception e) {
+//				    				//print error or something
+//			}
+//			}
+	
+
+	public static void swipeDown(int howManySwipes) {
+		org.openqa.selenium.Dimension size = getDriver().manage().window().getSize();
+		System.out.println("Size is "+size);
+		// calculate coordinates for vertical swipe
+		int startVerticalY = (int) (size.height * 0.8);
+		int endVerticalY = (int) (size.height * 0.21);
+		int startVerticalX = (int) (size.width / 2.1);
+		
+		System.out.println(startVerticalY+" "+endVerticalY+" "+startVerticalX);
+		try {
+		for (int i = 1; i <= howManySwipes; i++) {
+		new TouchAction(getDriver()).press(point(startVerticalX, endVerticalY))
+		.waitAction(waitOptions(ofSeconds(2))).moveTo(point(startVerticalX, startVerticalY))
+		.release().perform();
+		}
+		} catch (Exception e) {
+		//print error or something
+		}
+		}
+	
+	private static WaitOptions waitOptions(Object ofSeconds) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	private static Object ofSeconds(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	private static PointOption point(int startVerticalX, int startVerticalY) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 	public static void scrollTo1(String text) {
 		System.out.println("Scrolling to the Element which has the given text property : " + text);
 		getDriver().findElement(MobileBy
@@ -272,7 +333,7 @@ public class BaseClass {
 	 */
 	public static void applyExplicitWaitsUntilElementClickable(WebElement element) {
 		System.out.println("Applying explicit wait until the given element is clickable");
-		WebDriverWait wait = new WebDriverWait(getDriver(), 15);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 40);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		wait.withTimeout(15, TimeUnit.SECONDS);
 	}
@@ -285,7 +346,7 @@ public class BaseClass {
 	 */
 	public static void applyExplicitWait(int timeInSeconds) throws MalformedURLException {
 		System.out.println("Applying explicit wait for the given time duration in seconds : " + timeInSeconds);
-		WebDriverWait wait = new WebDriverWait(getDriver(), 15);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
 		wait.withTimeout(timeInSeconds, TimeUnit.SECONDS);
 	}
 

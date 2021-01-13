@@ -18,6 +18,7 @@ public class Module_Verify_Test_Plan extends BaseClass {
 
 	public void verify_Test_Plan() throws MalformedURLException, InterruptedException {
 		Object_Test_Unit test = new Object_Test_Unit();
+
 		
 		test.Test_Unit.click();
 		Thread.sleep(3000);
@@ -30,7 +31,7 @@ public class Module_Verify_Test_Plan extends BaseClass {
 		test.begin_Practise.click();
 		
 		Thread.sleep(15000);
-		applyExplicitWaitsUntilElementVisible(test.quetionCount);
+//		applyExplicitWaitsUntilElementVisible(test.quetionCount);
 	
 		int quetionsCount=verify_Question_Count_In_Test_Module();
 
@@ -45,7 +46,7 @@ public class Module_Verify_Test_Plan extends BaseClass {
 		soft.assertTrue(verify);
 		System.out.println(i+" quetion checked");
 		applyExplicitWait(10);
-		test.i_will_attempt_later.click();
+//		test.i_will_attempt_later.click();
 		System.out.println(i+"element click");
 		System.out.println("Clicked on attempt later button");
 		applyExplicitWait(10);

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class Object_Begin_Revision_Topic4_Chapter1_Mathematics extends Object_Subject_Mathematics {
+public class Object_Begin_Revision_Topic4_Chapter1_Mathematics extends Object_Syllabus_Option {
 
 	public Object_Begin_Revision_Topic4_Chapter1_Mathematics() {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);

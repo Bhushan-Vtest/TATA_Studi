@@ -22,7 +22,7 @@ public class AFS_UserStory_65 extends BaseClass{
 		login.Login_to_app();
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
     public void	T01_To_Verify_BeginPractise_Link() throws IOException, InterruptedException{
 		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
 		test.verify_Begin_Practise_Link();
@@ -50,7 +50,7 @@ public class AFS_UserStory_65 extends BaseClass{
 		
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
     public void	T05_To_Verify_User_should_shown_proper_Response_for_correct_option() throws IOException, InterruptedException, AWTException{
 		Module_Verify_Syllabus_Section test =new Module_Verify_Syllabus_Section();
 		test.toVerify_ProperFeedBack_forCorrectOption();
